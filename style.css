@@ -1,0 +1,29 @@
+.grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(186px, 1fr));
+}
+header {
+  color: #070600;
+  background-color: #23b5d3;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #EA526F;
+}
+a:hover{
+  background:blue;
+  color: pink;
+}
+* {
+  back
+}
+main {
+  background-color: #23b5d3;
+}
+footer {
+  background-color: #23b5d3;
+}
