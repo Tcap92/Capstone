@@ -1,9 +1,9 @@
 * {
-  background-color: #da8b8b;
-  padding: 2px;
-  margin: 2px;
+  padding: 0px;
+  margin: 0px;
   border: 0px;
   font-family: 'Rowdies', cursive;
+  box-sizing: border-box;
 
 }
 /* .grid { */
@@ -13,11 +13,9 @@
   grid-template-columns: none;
 } */
 header {
-  background-image: url('Anime3.jpg');
+
   background-size: cover;
   max-width: 200vw;
-  color: #070600;
-  background-color: #fdfdfb;
   max-width:max-content;
   border: 2px;
   margin: 2px;
@@ -25,7 +23,7 @@ header {
 h2 {
   margin: 2px;
   border: 2px;
-  padding: auto;
+  padding: px;
 }
 
 ul {
@@ -33,7 +31,7 @@ ul {
   max-width: 200vw;
   justify-content: space-around;
   align-items: center;
-  background: #EA526F;
+  background: #4b7eeb;
   border: #070600;
 
 }
@@ -41,58 +39,75 @@ a:hover{
   background:rgb(255, 0, 0);
   color: rgb(0, 0, 0);
 }
+.hashBox {
+  border-color: rgb(8, 8, 8);
+  border-style: solid;
+  display: flex;
+
+}
 
 
 #headerMain {
   display: flex;
   justify-content: center;
   }
-  .homePageNav {
-    display: flex;
+
+.homePageNav {
+
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
-    max-width: 200vw;
+    /* max-width: 50vw;
+    height: 10vh; */
+
+  }
+  .jumbotron {
+    background-image: url('Anime3.jpg');
+    background-size: cover;
+    height: 25vh;
+    width: 100vw;
+    display: flex;
 
   }
 
 
 
-main {
+/* main {
   flex-wrap: wrap;
   background-color: #b9c3c5;
   flex-direction: column;
   align-items: flex-start;
 
-}
-footer {
-  background-color: rgb(255, 255, 255);
+} */
 
-}
 #pic1 {
-  align-items: center;
-  display: flex;
-  height: 300px;
-  justify-content: center;
-  float: left;
-}
-#pic2 {
-  align-items: center;
-  display: flex;
-  height: 300px;
-  justify-content: center;
-  float: right;
 
-}
-#animeFacts {
-  align-items: left;
-  display: flex;
-  justify-content: center;
-}
-.mainP {
+
+  height: 350px;
   justify-content: space-between;
+  float: left;
+  width: 55vw;
+  padding: 5px;
+}
+ #pic2 {
+  height: 350px;
+  justify-content: space-between;
+  float: right;
+  width: 45vw;
+  padding: 5px;
+}
+/* #animeFacts {
+  display: flex;
+  flex-direction: column;
+} */
+.mainP {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
   align-items: center;
   font-size: 15px;
+  width: 100vw;
+  padding: 5px;
 
 }
 
@@ -105,10 +120,15 @@ footer {
   padding: 30em;
   align-items: center;
   flex-direction: column;
+  background-color: #e6e3d7;
 }
 #animeFacts {
   /* justify-content: flex-start; */
 }
+/* .mainHome {
+  display: flex;
+  width: 50vw;
+} */
 
 
 
@@ -129,14 +149,21 @@ footer {
   bottom: 0;
   width: 100%;
   height: 1.5rem;            /* Footer height */
+
 }
 
 #footer {
   justify-content: flex-start;
   display: flex;
   /* position: absolute; */
-  bottom: 20vw;
+  bottom: 5vh;
   width: 100%;
-  height: 5.5rem;
+  height: 1rem;
+  flex-direction: column;
 }
 
+@media (min-width: 550px) {
+  nav > .fa-bars {
+    display: none;
+  }
+}
