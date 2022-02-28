@@ -13,44 +13,31 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&family=Space+Mono&display=swap" rel="stylesheet">
 </head>
-
-
-
-<header >
-  <div class="jumbotron">
-  <img src="Anime3.jpg" alt="Flame Hashir" id="pic3">
-  </div>
+<header id="headerMain">
+<img src="Anime3.jpg" alt="Flame Hashira" id="pic1">
 </header>
-
 <body>
-
-  <div class="jumbotron">
-  </div>
-
   <div>
   <nav>
-    <div class="homePageNav">
     <ul>
       <h2> LOGO </h2>
       <a href"/">Home</a>
       <a href"/">Facts</a>
       <a href"/">About Us</a>
       <a href"/">Contact</a>
-    </div>
+
   </nav>
-
-
   <div>
-    <header>
+  <header>
       <img src="Anime.jpg" alt="Flame Hashira" id="pic1" width="500px" height="333px">
       <img src="Anime2.jpg" alt="Yami" id="pic2"  width="500px" height="333px">
   </div>
 
-  <div class="mainP"  id="pMain">
+    <div class="mainP"  id="pMain">
       <h2>
-        -----I want to have pictures in a rectangle with a random Anime picture inside of the rectangle and I want the rectangle a little off center to the left, underneath the pictures i want another box the same width as the picture with a QUESTION/4-ANSWERS. On the far Right i want to embed 2 random Anime videos(working on this.) Also im having some trouble to get my footer to just stick to the very bottom of the page which I have been messing around with.
-      </h2>
-  </div>
+        <!-- -----I want to have pictures in a rectangle with a random Anime picture inside of the rectangle and I want the rectangle a little off center to the left, underneath the pictures i want another box the same width as the picture with a QUESTION/4-ANSWERS. On the far Right i want to embed 2 random Anime videos(working on this.) Also im having some trouble to get my footer to just stick to the very bottom of the page which I have been messing around with. -->
+    </h2>
+    </div>
   </header>
 
   <main>
