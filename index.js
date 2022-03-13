@@ -15,15 +15,17 @@ function render(st) {
 
   router.updatePageLinks();
 
-  addEventListeners();
+  addEventListeners(st);
 }
 
 function addEventListeners(st) {
+  console.log("Event listener state", st);
   // add event listeners to Nav items for navigation
   document.querySelectorAll("nav a").forEach(navLink =>
     navLink.addEventListener("click", event => {
+      console.log("this is the event", event);
       event.preventDefault();
-      render(state[event.target.title]);
+      render(st[event.title]);
     })
   );
 
@@ -38,9 +40,10 @@ function addEventListeners(st) {
 router
   .on({
     "/": () => render(state.Home),
-    ":page": params => {
-      let page = capitalize(params.page);
-      render(state[page]);
+    ":view": params => {
+      console.log(params); //remove
+      let view = capitalize(params.data.view);
+      render(state[view]);
     }
   })
   .resolve();

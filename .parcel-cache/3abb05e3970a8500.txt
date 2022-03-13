@@ -61,7 +61,7 @@
 80C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\postcss\lib\stringifier.js132910846057399451 0
 116C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\posthtml\node_modules\posthtml-parser\dist\location-tracker.js132910846054587605 0
 95C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\postcss-minify-selectors\types\index.d.ts132910846056462164 0
-55C:\Users\zzzns\code\SavvyCoders\Capstone\store\Facts.js132910927691756935 0
+55C:\Users\zzzns\code\SavvyCoders\Capstone\store\Facts.js132916777707016866 0
 77C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\lodash\fp\spreadFrom.js132910918545179551 0
 86C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\esquery\dist\esquery.lite.min.js132881557646628899 0
 84C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\postcss-merge-longhand\src\lib132910846057711871 1
@@ -147,8 +147,8 @@
 82C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\eslint\lib\rules\no-octal.js132881557664976625 0
 73C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\js-yaml\lib\type.js132881557631773930 0
 97C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\eslint\lib\source-code\token-store\index.js132881557653810731 0
-49C:\Users\zzzns\code\SavvyCoders\Capstone\index.js132910909290359475 0
-45C:\Users\zzzns\code\SavvyCoders\Capstone\dist132910940861181261 1
+49C:\Users\zzzns\code\SavvyCoders\Capstone\index.js132916776321527763 0
+45C:\Users\zzzns\code\SavvyCoders\Capstone\dist132916779694249228 1
 90C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\@parcel\transformer-babel\lib\jsx.js132910846056930800 0
 75C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\lodash\fp\restFrom.js132910918544858623 0
 99C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\eslint\lib\rules\no-async-promise-executor.js132881557656533447 0
@@ -254,7 +254,7 @@
 83C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\lmdb\dependencies\lz4\LICENSE132910846057243228 0
 84C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\svgo\plugins\preset-default.js132910846058180505 0
 80C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\prettier\parser-babylon.js132881557646918122 0
-55C:\Users\zzzns\code\SavvyCoders\Capstone\store\About.js132910924084344801 0
+55C:\Users\zzzns\code\SavvyCoders\Capstone\store\About.js132916777564434061 0
 107C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\html-literal\node_modules\flatted\.github\FUNDING.yml132910940575172455 0
 76C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\lodash\fp\extendAll.js132910918539781438 0
 84C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\eslint\lib\init\config-file.js132881557652743581 0
@@ -268,7 +268,7 @@
 113C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\mdb_dump.c132910846058336719 0
 75C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\lodash\isArrayLike.js132910918541654156 0
 76C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\lodash\wrapperChain.js132910918547112869 0
-57C:\Users\zzzns\code\SavvyCoders\Capstone\store\Contact.js132910928788920145 0
+57C:\Users\zzzns\code\SavvyCoders\Capstone\store\Contact.js132916777262813126 0
 92C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\postcss-merge-longhand\src\lib\trbl.js132910846057711871 0
 117C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\@parcel\workers\test\integration\workerfarm\shared-reference.js132910846057868081 0
 69C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\nanoid\index.js132910846056774589 0
@@ -1889,7 +1889,7 @@
 70C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\terser\README.md132910846058805358 0
 96C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\postcss-ordered-values\src\lib\addSpace.js132910846054275177 0
 78C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\terser\tools\domprops.js132910846057868081 0
-66C:\Users\zzzns\code\SavvyCoders\Capstone\components\views\Facts.js132910909984166997 0
+66C:\Users\zzzns\code\SavvyCoders\Capstone\components\views\Facts.js132916773338629105 0
 82C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\css-select\lib\sort.d.ts.map132910846057399451 0
 107C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\postcss-minify-font-values\types\lib\minify-font.d.ts132910846056930800 0
 93C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\terser\lib\compress\compressor-flags.js132910846057711871 0
@@ -2221,7 +2221,7 @@
 84C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\css-tree\lib\definition-syntax132910846059430215 1
 100C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\postcss-selector-parser\dist\selectors\node.js132910846057087016 0
 79C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\html-literal\src\index.ts132910940575172455 0
-58C:\Users\zzzns\code\SavvyCoders\Capstone\components\Nav.js132910929475007194 0
+58C:\Users\zzzns\code\SavvyCoders\Capstone\components\Nav.js132916779688746483 0
 66C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\argparse\lib132881557651357283 1
 91C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\stylehacks\src\plugins\mediaSlash9.js132910846057087016 0
 86C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\stylehacks\src\plugins\slash9.js132910846057243228 0
@@ -5637,7 +5637,7 @@
 96C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\@swc\helpers\src\_sliced_to_array_loose.js132910846059273998 0
 85C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\css-what\lib\stringify.d.ts.map132910846056149739 0
 75C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\css-tree\CHANGELOG.md132910846059430215 0
-65C:\Users\zzzns\code\SavvyCoders\Capstone\dist\Anime3.03aab8b5.jpg132910940860792302 0
+65C:\Users\zzzns\code\SavvyCoders\Capstone\dist\Anime3.03aab8b5.jpg132916779691117603 0
 67C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\css-tree\data132910846059430215 1
 98C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\caniuse-lite\data\features\css-textshadow.js132910846060055070 0
 67C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\css-tree\dist132910846058024292 1
@@ -6055,7 +6055,7 @@
 107C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\@parcel\transformer-html\node_modules\.bin\semver.ps1132910846084314752 0
 85C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\caniuse-lite\data\regions\MO.js132910846062923204 0
 85C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\caniuse-lite\data\regions\MP.js132910846062927018 0
-64C:\Users\zzzns\code\SavvyCoders\Capstone\dist\index.3a01df49.css132910940860622753 0
+64C:\Users\zzzns\code\SavvyCoders\Capstone\dist\index.3a01df49.css132916779690898190 0
 99C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\@swc\helpers\src\_class_private_method_set.js132910846058961572 0
 85C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\caniuse-lite\data\regions\MQ.js132910846062944305 0
 77C:\Users\zzzns\code\SavvyCoders\Capstone\node_modules\ajv\lib\dotjs\_limit.js132881557660159113 0
@@ -7431,11 +7431,11 @@
 69C:\Users\zzzns\code\SavvyCoders\Capstone\Documents\Wireframe 1.0.jpeg132883000075542026 0
 69C:\Users\zzzns\code\SavvyCoders\Capstone\Documents\Wireframe 1.1.jpeg132883000050850497 0
 69C:\Users\zzzns\code\SavvyCoders\Capstone\Documents\Wireframe 1.3.jpeg132882999990882392 0
-68C:\Users\zzzns\code\SavvyCoders\Capstone\dist\index.3a01df49.css.map132910940860632727 0
-63C:\Users\zzzns\code\SavvyCoders\Capstone\dist\index.3d214d75.js132910940861151345 0
-67C:\Users\zzzns\code\SavvyCoders\Capstone\dist\index.3d214d75.js.map132910940861171288 0
-56C:\Users\zzzns\code\SavvyCoders\Capstone\dist\index.html132910940860921961 0
+68C:\Users\zzzns\code\SavvyCoders\Capstone\dist\index.3a01df49.css.map132916779690908162 0
+63C:\Users\zzzns\code\SavvyCoders\Capstone\dist\index.3d214d75.js132916779691277171 0
+67C:\Users\zzzns\code\SavvyCoders\Capstone\dist\index.3d214d75.js.map132916779691297121 0
+56C:\Users\zzzns\code\SavvyCoders\Capstone\dist\index.html132916779694239249 0
 61C:\Users\zzzns\code\SavvyCoders\Capstone\components\Footer.js132910914445631237 0
-66C:\Users\zzzns\code\SavvyCoders\Capstone\components\views\About.js132910909948090142 0
+66C:\Users\zzzns\code\SavvyCoders\Capstone\components\views\About.js132916773011199087 0
 68C:\Users\zzzns\code\SavvyCoders\Capstone\components\views\Contact.js132910910939788423 0
-65C:\Users\zzzns\code\SavvyCoders\Capstone\components\views\Home.js132910909823578530 0
+65C:\Users\zzzns\code\SavvyCoders\Capstone\components\views\Home.js132916773579996506 0
