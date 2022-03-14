@@ -2,6 +2,8 @@ import { Header, Nav, Main, Footer } from "./components";
 import * as state from "./store";
 import Navigo from "navigo";
 import { capitalize } from "lodash";
+import axios from "axios";
+import { doesNotMatch } from "assert";
 
 const router = new Navigo("/");
 
@@ -25,7 +27,7 @@ function addEventListeners(st) {
     navLink.addEventListener("click", event => {
       console.log("this is the event", event);
       event.preventDefault();
-      render(st[event.title]);
+      render(st[event.target.title]);
     })
   );
 
@@ -37,11 +39,21 @@ function addEventListeners(st) {
     );
 }
 
+axios
+  .get("https://anime-facts-rest-api.herokuapp.com/api/v1/demon_slayer")
+
+  .then(response => {
+    state.Facts.facts = {};
+    state.Facts.facts.title = response.data.fact_id;
+    state.Facts.facts.img = response.img;
+  });
+
 router
   .on({
     "/": () => render(state.Home),
     ":view": params => {
-      console.log(params); //remove
+      console.log("render state", state);
+      console.log("render prams", params); //remove
       let view = capitalize(params.data.view);
       render(state[view]);
     }
