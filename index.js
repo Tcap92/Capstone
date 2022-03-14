@@ -43,8 +43,8 @@ function addEventListeners(st) {
 router.hooks({
   before: (done, params) => {
     const page =
-      params && params.data && params.data.page
-        ? capitalize(params.data.page)
+      params && params.data && params.data.view
+        ? capitalize(params.data.view)
         : "Facts";
     if (page === "Facts") {
       axios
