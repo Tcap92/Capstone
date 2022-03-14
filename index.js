@@ -51,9 +51,9 @@ router.hooks({
         .get(`https://anime-facts-rest-api.herokuapp.com/api/v1/demon_slayer`)
         .then(response => {
           state.Facts.facts = {};
-          state.Facts.facts.title = response.data.fact_id;
+          state.Facts.facts.title = response.data;
           state.Facts.facts.img = response.img;
-          console.log(response.json);
+          console.log("Checksing API", response.data);
           done();
         });
     }
