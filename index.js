@@ -4,6 +4,8 @@ import Navigo from "navigo";
 import { capitalize } from "lodash";
 import axios from "axios";
 import { doesNotMatch } from "assert";
+import dotenv from "dotenv";
+dotenv.config();
 
 const router = new Navigo("/");
 
@@ -46,7 +48,7 @@ router.hooks({
         : "Facts";
     if (page === "Facts") {
       axios
-        .get("https://anime-facts-rest-api.herokuapp.com/api/v1/demon_slayer")
+        .get(`https://anime-facts-rest-api.herokuapp.com/api/v1/demon_slayer`)
         .then(response => {
           state.Facts.facts = {};
           state.Facts.facts.title = response.data.fact_id;
