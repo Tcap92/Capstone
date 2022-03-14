@@ -38,15 +38,25 @@ function addEventListeners(st) {
       document.querySelector("nav > ul").classList.toggle("hidden--mobile")
     );
 }
-
-axios
-  .get("https://anime-facts-rest-api.herokuapp.com/api/v1/demon_slayer")
-
-  .then(response => {
-    state.Facts.facts = {};
-    state.Facts.facts.title = response.data.fact_id;
-    state.Facts.facts.img = response.img;
-  });
+router.hooks({
+  before: (done, params) => {
+    const page =
+      params && params.data && params.data.page
+        ? capitalize(params.data.page)
+        : "Facts";
+    if (page === "Facts") {
+      axios
+        .get("https://anime-facts-rest-api.herokuapp.com/api/v1/demon_slayer")
+        .then(response => {
+          state.Facts.facts = {};
+          state.Facts.facts.title = response.data.fact_id;
+          state.Facts.facts.img = response.img;
+          console.log(response.json);
+          done();
+        });
+    }
+  }
+});
 
 router
   .on({
