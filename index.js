@@ -50,9 +50,9 @@ router.hooks({
       axios
         .get(`https://anime-facts-rest-api.herokuapp.com/api/v1/demon_slayer`)
         .then(response => {
-          state.Facts.facts = {};
-          state.Facts.facts.title = response.data;
-          state.Facts.facts.img = response.img;
+          state.Facts.facts = [];
+          state.Facts.facts = response.data;
+          // state.Facts.facts.img = response.img;
           console.log("Checksing API", response.data);
           done();
         });
