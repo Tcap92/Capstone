@@ -3,7 +3,7 @@ import * as state from "./store";
 import Navigo from "navigo";
 import { capitalize } from "lodash";
 import axios from "axios";
-import { doesNotMatch } from "assert";
+// import { doesNotMatch } from "assert";
 import dotenv from "dotenv";
 dotenv.config();
 
@@ -19,9 +19,6 @@ function render(st) {
 
   router.updatePageLinks();
   addEventListeners(st);
-  if (st.view === "Facts") {
-    addFacts(st);
-  }
 }
 
 function addFacts(st) {
@@ -30,23 +27,21 @@ function addFacts(st) {
     content.innerText = fact.fact;
     document.getElementById("factRoot").appendChild(content);
   });
+}
 
+function addEventListeners(st) {
   // add menu toggle to bars icon in nav bar
   document
     .querySelector(".fa-bars")
     .addEventListener("click", () =>
       document.querySelector("nav > ul").classList.toggle("hidden--mobile")
     );
+
+  // if (st.view === "Facts") {
+  //   addFacts(st);
+  // }
 }
-function addEventListeners(st) {
-  // add event listeners to Nav items for navigation
-  document.querySelectorAll("nav a").forEach(navLink =>
-    navLink.addEventListener("click", event => {
-      event.preventDefault();
-      render(st[event.target.title]);
-    })
-  );
-}
+
 router.hooks({
   before: (done, params) => {
     const view =
@@ -60,6 +55,8 @@ router.hooks({
           state.Facts.facts = response.data.data;
           done();
         });
+    } else {
+      done();
     }
   }
 });
