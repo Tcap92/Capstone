@@ -18,20 +18,18 @@ function render(st) {
     `;
 
   router.updatePageLinks();
-
   addEventListeners(st);
+  if (st.view === "Facts") {
+    addFacts(st);
+  }
 }
 
-function addEventListeners(st) {
-  console.log("Event listener state", st);
-  // add event listeners to Nav items for navigation
-  document.querySelectorAll("nav a").forEach(navLink =>
-    navLink.addEventListener("click", event => {
-      console.log("this is the event", event);
-      event.preventDefault();
-      render(st[event.target.title]);
-    })
-  );
+function addFacts(st) {
+  st.facts.map(fact => {
+    let content = document.createElement("div");
+    content.innerText = fact.fact;
+    document.getElementById("factRoot").appendChild(content);
+  });
 
   // add menu toggle to bars icon in nav bar
   document
@@ -40,20 +38,26 @@ function addEventListeners(st) {
       document.querySelector("nav > ul").classList.toggle("hidden--mobile")
     );
 }
+function addEventListeners(st) {
+  // add event listeners to Nav items for navigation
+  document.querySelectorAll("nav a").forEach(navLink =>
+    navLink.addEventListener("click", event => {
+      event.preventDefault();
+      render(st[event.target.title]);
+    })
+  );
+}
 router.hooks({
   before: (done, params) => {
-    const page =
+    const view =
       params && params.data && params.data.view
         ? capitalize(params.data.view)
         : "Facts";
-    if (page === "Facts") {
+    if (view === "Facts") {
       axios
         .get(`https://anime-facts-rest-api.herokuapp.com/api/v1/demon_slayer`)
         .then(response => {
-          state.Facts.facts = [];
-          state.Facts.facts = response.data;
-          // state.Facts.facts.img = response.img;
-          console.log("Checksing API", response.data);
+          state.Facts.facts = response.data.data;
           done();
         });
     }
@@ -62,11 +66,14 @@ router.hooks({
 
 router
   .on({
-    "/": () => render(state.Home),
+    "/": () => {
+      console.log("render state", state.Home);
+      render(state.Home);
+    },
     ":view": params => {
-      console.log("render state", state);
-      console.log("render prams", params); //remove
       let view = capitalize(params.data.view);
+      console.log("render state", state[view]);
+
       render(state[view]);
     }
   })
