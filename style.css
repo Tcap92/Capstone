@@ -220,8 +220,20 @@ border-width: 5px;
   flex-direction: column;
 }
 
+nav > .fa-bars {
+  color: white;
+  width: 50px;
+}
+
 @media (min-width: 550px) {
   nav > .fa-bars {
     display: none;
   }
 }
+
+@media (max-width: 549px){
+  .hidden--mobile {
+    display: none !important;
+  }
+}
+
