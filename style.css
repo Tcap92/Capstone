@@ -5,7 +5,7 @@
   border-width: px;
   font-family: 'Rowdies', cursive;
   /* box-sizing: border-box; */
-  background-color: rgb(174, 191, 206);
+  background-color: rgb(199, 221, 216);
 
 }
 
@@ -100,6 +100,8 @@ a:hover{
   float: left;
   width: 50vw;
   height: 50vh;
+  border: solid;
+  border-width: 5px;
 
 }
 
@@ -125,8 +127,8 @@ a:hover{
 .mainP {
   display: flex;
   font-size: 15px;
-  border-style: solid;
-  border-width: 10px;
+  border: solid;
+  border-width: 5px;
   width: 50vw;
   /* height: auto; */
   justify-content: center;
@@ -170,6 +172,8 @@ a:hover{
     height: auto;
     height: 5vh;
     width: 100vw;
+    padding-left: 2px;
+    padding-right: 2px;
 
 
 }
@@ -261,6 +265,8 @@ border-width: 5px;
 #blackBull > iframe {
   width: 45vw;
   height: 50vh;
+  border: solid;
+  border-width: 5px;
 
 }
 
