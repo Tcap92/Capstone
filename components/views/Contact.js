@@ -6,8 +6,8 @@ export default () => html`
       id="fs-frm"
       name="simple-contact-form"
       accept-charset="utf-8"
-      action="https://formspree.io/f/{form_id}"
-      method="post"
+      action="https://formspree.io/f/mknyrynv"
+      method="POST"
     >
       <fieldset id="fs-frm-inputs">
         <div id="nameField">

@@ -49,12 +49,28 @@ router.hooks({
         ? capitalize(params.data.view)
         : "Facts";
     if (view === "Facts") {
-      axios
-        .get(`https://anime-facts-rest-api.herokuapp.com/api/v1/demon_slayer`)
-        .then(response => {
-          state.Facts.facts = response.data.data;
+      // axios
+      //   .get(`https://anime-facts-rest-api.herokuapp.com/api/v1/demon_slayer`)
+      //   .then(response => {
+      //     state.Facts.demon = response.data.data;
+      //     done();
+      //   });
+      let slayer = axios.get(
+        `https://anime-facts-rest-api.herokuapp.com/api/v1/demon_slayer`
+      );
+      let brother = axios.get(
+        `https://anime-facts-rest-api.herokuapp.com/api/v1/fma_brotherhood`
+      );
+      axios.all([slayer, brother]).then(
+        axios.spread((...responses) => {
+          console.log("Slayer", responses[0]);
+          state.Facts.demon = responses[0].data.data;
+          console.log("brother", responses[1]);
+          state.Facts.brotherhood = responses[1].data.data;
+
           done();
-        });
+        })
+      );
     } else {
       done();
     }
