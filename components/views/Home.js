@@ -1,10 +1,12 @@
 import html from "html-literal";
+import flameHashira from "../../assets/images/Anime.jpg";
+import Yami from "../../assets/images/Anime2.jpg";
 export default st => html`
   <div>
     <div class="mainContent">
       <div class="pageLeft">
         <div id="demonSlayer">
-          <img src="Anime.jpg" alt="Flame Hashira" />
+          <img src=${flameHashira} alt="Flame Hashira" />
           <div class="mainP">
             <p id="questions1">
               -----I want to have pictures in a rectangle with a random Anime
@@ -16,20 +18,22 @@ export default st => html`
               very bottom of the page which I have been messing around with.
             </p>
           </div>
+          <img src=${Yami} alt="Captain Yami" />
         </div>
       </div>
       <div class="pageRight">
         <div id="blackBull">
-          <img src="Anime2.jpg" alt="Yami" />
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/kitCDvmSygM"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
     </div>
-    <main class="mainHome">
-      <div id="animeFacts" class="factsAnime">
-        <div id="facts2">
-          <!-- <p style="margin-left: 850px;"><a href="https://funnyjunk.com/channel/animemanga/Random+anime+facts/iwxXLvj/">Some cool ANIME FACTS!</a></p> -->
-        </div>
-      </div>
-    </main>
   </div>
 `;
