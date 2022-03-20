@@ -292,3 +292,23 @@ a:hover {
 #brotherFact {
   margin-top: 2em;
 }
+
+#heroFact {
+  margin-top: 2em;
+}
+
+#titanFact {
+  margin-top: 2em;
+}
+#factPage {}
+#factPage > .factStyle {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#factPage > #demonFact {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}

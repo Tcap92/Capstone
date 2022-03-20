@@ -61,12 +61,22 @@ router.hooks({
       let brother = axios.get(
         `https://anime-facts-rest-api.herokuapp.com/api/v1/fma_brotherhood`
       );
-      axios.all([slayer, brother]).then(
+      let hero = axios.get(
+        `https://anime-facts-rest-api.herokuapp.com/api/v1/boku_no_hero_academia`
+      );
+      let titan = axios.get(
+        `https://anime-facts-rest-api.herokuapp.com/api/v1/attack_on_titan`
+      );
+      axios.all([slayer, brother, hero, titan]).then(
         axios.spread((...responses) => {
           console.log("Slayer", responses[0]);
           state.Facts.demon = responses[0].data.data;
           console.log("brother", responses[1]);
           state.Facts.brotherhood = responses[1].data.data;
+          console.log("hero", responses[2]);
+          state.Facts.hero = responses[2].data.data;
+          console.log("titan", responses[3]);
+          state.Facts.titan = responses[3].data.data;
 
           done();
         })

@@ -2,5 +2,7 @@ export default {
   header: "Facts",
   view: "Facts",
   demon: [],
-  brotherhood: []
+  brotherhood: [],
+  hero: [],
+  titan: []
 };
