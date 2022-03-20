@@ -19,6 +19,15 @@ export default st => html`
             </p>
           </div>
           <img src=${Yami} alt="Captain Yami" />
+          <p id="questions2">
+            -----I want to have pictures in a rectangle with a random Anime
+            picture inside of the rectangle and I want the rectangle a little
+            off center to the left, underneath the pictures i want another box
+            the same width as the picture with a QUESTION/4-ANSWERS. On the far
+            Right i want to embed 2 random Anime videos(working on this.) Also
+            im having some trouble to get my footer to just stick to the very
+            bottom of the page which I have been messing around with.
+          </p>
         </div>
       </div>
       <div class="pageRight">

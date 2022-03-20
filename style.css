@@ -274,3 +274,13 @@ border-width: 5px;
 display: flex;
 width: 100vw;
 }
+
+#questions2 {
+  border: solid;
+  display: flex;
+  font-size: 15px;
+  border: solid;
+  border-width: 5px;
+  width: 50vw;
+  justify-content: center;
+}
