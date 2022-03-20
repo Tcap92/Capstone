@@ -305,10 +305,12 @@ a:hover {
   padding-left: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
 }
 #factPage > #demonFact {
-  justify-content: center;
+  justify-content: space-between;
   display: flex;
   flex-direction: column;
+  padding: 1em;
+  margin: auto;
 }

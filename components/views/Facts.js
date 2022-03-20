@@ -5,22 +5,24 @@ export default st => html`
   <div id="factPage">
     <div id="demonFact" class="factStyle">
       <h3>Demon Slayer Facts</h3>
-      ${st.demon.map(element => `<div class="demonFact">${element.fact}</div>`)}
+      ${st.demon.map(
+        element => `<div class="demonFacts">-${element.fact}</div>`
+      )}
     </div>
     <div id="brotherFact" class="factStyle">
       <h3>FMA Brotherhood Facts</h3>
       ${st.brotherhood.map(
-        element => `<div class="brotherFacts">${element.fact}</div>`
+        element => `<div class="brotherFacts">-${element.fact}</div>`
       )}
       <div id="heroFact" class="factStyle">
         <h3>My Hero Academia</h3>
         ${st.hero.map(
-          element => `<div class="heroFacts">${element.fact}</div>`
+          element => `<div class="heroFacts">-${element.fact}</div>`
         )}
         <div id="titanFact" class="factStyle">
-          <h3>Attack On Tita</h3>
+          <h3>Attack On Titan</h3>
           ${st.titan.map(
-            element => `<div class="titanFacts">${element.fact}</div>`
+            element => `<div class="titanFacts">-${element.fact}</div>`
           )}
         </div>
       </div>
