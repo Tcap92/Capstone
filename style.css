@@ -30,10 +30,10 @@
   flex-direction: row;
 
 } */
-a:hover {
+/* a:hover {
   background: rgb(255, 0, 0);
   color: rgb(0, 0, 0);
-}
+} */
 /*
 #headerMain {
   display: flex;
@@ -109,7 +109,7 @@ a:hover {
 
 /*form*/
 #fs-frm {
-  max-height: 100vh;
+  height: 50vh;
   width: 100vw;
   display: flex;
   border: solid;
@@ -143,6 +143,7 @@ a:hover {
   width: 100%;
   padding-left: 0;
   padding-right: 0;
+  padding-top: 2em;
 }
 .questions1 {
   display: flex;
@@ -189,17 +190,39 @@ a:hover {
   width: 100%;
   height: 1rem;
   flex-direction: column;
+  padding-top: 2px;
 }
  /* desktop */
 @media (min-width: 550px) {
   nav > ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 0 0;
     background-color: rgb(52, 52, 102);
     width: 100%;
   }
+  /* new transition */
+  nav {
+    /* display: flex;
+    gap: 0.5rem; */
+  }
 
+  a {
+    flex: 1;
+    background-color: rgb(165, 81, 81);
+    color: rgb(0, 0, 0);
+    /* padding: 0.5rem; */
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+  }
+
+  a:hover,
+  a:focus {
+    background-color: rgb(253, 253, 253);
+    color: rgb(52, 52, 52);
+  }
+  /* End of transition */
   nav > ul > li {
     display: inline-block;
     text-decoration: none;
@@ -300,17 +323,18 @@ a:hover {
 #titanFact {
   margin-top: 2em;
 }
-#factPage {}
+
 #factPage > .factStyle {
   padding-left: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-#factPage > #demonFact {
+/* #factPage > #demonFact {
   justify-content: space-between;
   display: flex;
   flex-direction: column;
   padding: 1em;
   margin: auto;
-}
+} */
+

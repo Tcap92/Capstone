@@ -5,7 +5,7 @@ let year = new Date().getFullYear();
 export default () => html`
   <footer>
     <div class="footer1">
-      &copy; ${year} *website name*
+      &copy; ${year} *Anime Persona*
     </div>
   </footer>
 `;
