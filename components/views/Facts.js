@@ -14,18 +14,16 @@ export default st => html`
       ${st.brotherhood.map(
         element => `<div class="brotherFacts">-${element.fact}</div>`
       )}
-      <div id="heroFact" class="factStyle">
-        <h3>My Hero Academia</h3>
-        ${st.hero.map(
-          element => `<div class="heroFacts">-${element.fact}</div>`
-        )}
-        <div id="titanFact" class="factStyle">
-          <h3>Attack On Titan</h3>
-          ${st.titan.map(
-            element => `<div class="titanFacts">-${element.fact}</div>`
-          )}
-        </div>
-      </div>
+    </div>
+    <div id="heroFact" class="factStyle">
+      <h3>My Hero Academia</h3>
+      ${st.hero.map(element => `<div class="heroFacts">-${element.fact}</div>`)}
+    </div>
+    <div id="titanFact" class="factStyle">
+      <h3>Attack On Titan</h3>
+      ${st.titan.map(
+        element => `<div class="titanFacts">-${element.fact}</div>`
+      )}
     </div>
   </div>
 `;

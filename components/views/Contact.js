@@ -11,7 +11,7 @@ export default () => html`
     >
       <fieldset id="fs-frm-inputs">
         <div id="nameField">
-          <label for="full-name">Full Name:</label>
+          <label for="full-name" id="nameBox">Full Name:</label>
           <input
             type="text"
             name="name"
@@ -21,7 +21,7 @@ export default () => html`
           />
         </div>
         <div id="emailField">
-          <label for="email-address">Email Address:</label>
+          <label for="email-address" id="emailBox">Email Address:</label>
           <input
             type="email"
             name="_replyto"
@@ -31,7 +31,7 @@ export default () => html`
           />
         </div>
         <div id="messageField">
-          <label for="message">Message:</label>
+          <label for="message" id="messageBox">Message:</label>
           <textarea
             rows="5"
             name="message"

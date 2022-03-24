@@ -7,27 +7,99 @@ export default st => html`
       <div class="pageLeft">
         <div id="demonSlayer">
           <img src=${flameHashira} alt="Flame Hashira" />
-          <div class="mainP">
-            <p id="questions1">
-              -----I want to have pictures in a rectangle with a random Anime
-              picture inside of the rectangle and I want the rectangle a little
-              off center to the left, underneath the pictures i want another box
-              the same width as the picture with a QUESTION/4-ANSWERS. On the
-              far Right i want to embed 2 random Anime videos(working on this.)
-              Also im having some trouble to get my footer to just stick to the
-              very bottom of the page which I have been messing around with.
-            </p>
+          <!-- <div class="mainP"> -->
+          <div class="container">
+            <div id="question-container" class="hide">
+              <div id="question">Question</div>
+              <div id="answer-buttons" class="btn-grid">
+                <div id="answerOneTwo">
+                  <!-- input type check box -->
+                  <input
+                    type="radio"
+                    id="question1A1"
+                    name="drone"
+                    value="question1A1"
+                    checked
+                  />
+                  <label for="huey">Question1A1</label>
+                </div>
+                <input
+                  type="radio"
+                  id="question1A2"
+                  name="drone"
+                  value="question1A2"
+                  checked
+                />
+                <label for="huey">Question1A2</label>
+                <div id="answerThreeFour">
+                  <input
+                    type="radio"
+                    id="question1A3"
+                    name="drone"
+                    value="question1A3"
+                    checked
+                  />
+                  <label for="huey">Question1A3</label>
+                </div>
+                <input
+                  type="radio"
+                  id="question1A4"
+                  name="drone"
+                  value="question1A4"
+                  checked
+                />
+                <label for="huey">Question1A4</label>
+              </div>
+            </div>
+            <div class="controls">
+              <button id="start-btn" class="start-btn btn">Start</button>
+              <button id="next-btn" class="next-btn btn hide">Next</button>
+            </div>
           </div>
+          <!-- </div> -->
           <img src=${Yami} alt="Captain Yami" />
-          <p id="questions2">
-            -----I want to have pictures in a rectangle with a random Anime
-            picture inside of the rectangle and I want the rectangle a little
-            off center to the left, underneath the pictures i want another box
-            the same width as the picture with a QUESTION/4-ANSWERS. On the far
-            Right i want to embed 2 random Anime videos(working on this.) Also
-            im having some trouble to get my footer to just stick to the very
-            bottom of the page which I have been messing around with.
-          </p>
+          <div id="question-containerTwo">
+            <div id="question2">Question2</div>
+            <div id="answer-buttons" class="btn-grid">
+              <div id="answerOneTwo">
+                <!-- input type check box -->
+                <input
+                  type="radio"
+                  id="question2A1"
+                  name="drone"
+                  value="question2A1"
+                  checked
+                />
+                <label for="huey">Question2A1</label>
+              </div>
+              <input
+                type="radio"
+                id="question2A2"
+                name="drone"
+                value="question2A2"
+                checked
+              />
+              <label for="huey">Question2A2</label>
+              <div id="answerThreeFour">
+                <input
+                  type="radio"
+                  id="question2A3"
+                  name="drone"
+                  value="question2A3"
+                  checked
+                />
+                <label for="huey">Question2A3</label>
+              </div>
+              <input
+                type="radio"
+                id="question1A4"
+                name="drone"
+                value="question1A4"
+                checked
+              />
+              <label for="huey">Question2A4</label>
+            </div>
+          </div>
         </div>
       </div>
       <div class="pageRight">
