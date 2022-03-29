@@ -233,9 +233,11 @@
   nav > .fa-bars {
     display: none;
   }
+
 }
 /* mobile */
 @media (max-width: 549px){
+
   .hidden--mobile {
     display: none !important;
   }
@@ -267,6 +269,15 @@
   }
   .pageLeft {
     width: 70%;
+  }
+  .mainContent > .pageLeft > #demonSlayer > .picOne {
+    width: 100%;
+  }
+  .mainContent > .pageLeft > #demonSlayer > .picTwo {
+    width: 100%;
+  }
+  .mainContent > .pageLeft > #demonSlayer > .picThree {
+    width: 100%;
   }
 }
 
@@ -371,6 +382,17 @@
 .container {
   width: 100%;
 }
-.btn {
+
+.aboutME {
   width: 50%;
+  align-items: center;
+  display: flex;
+}
+.aboutContainer {
+  display: flex;
+  padding: 5px;
+  margin: 5px;
+}
+.aboutIntro {
+  width: 150%;
 }

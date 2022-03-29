@@ -5,6 +5,7 @@ import { capitalize } from "lodash";
 import axios from "axios";
 // import { doesNotMatch } from "assert";
 import dotenv from "dotenv";
+import * as Quiz from "./Quiz.js";
 dotenv.config();
 
 const router = new Navigo("/");
@@ -31,61 +32,61 @@ function addFacts(st) {
 
 function addEventListeners(st) {
   // add menu toggle to bars icon in nav bar
-  document
-    .querySelector(".fa-bars")
-    .addEventListener("click", () =>
-      document.querySelector("nav > ul").classList.toggle("hidden--mobile")
-    );
+  document.querySelector(".fa-bars").addEventListener("click", () => {
+    Quiz.test();
+    Quiz.btn();
+    document.querySelector("nav > ul").classList.toggle("hidden--mobile");
+  });
 
   // if (st.view === "Facts") {
   //   addFacts(st);
   // }
 }
+// API incase it starts to work
+// router.hooks({
+//   before: (done, params) => {
+//     const view =
+//       params && params.data && params.data.view
+//         ? capitalize(params.data.view)
+//         : "Facts";
+//     if (view === "Facts") {
+//       axios
+//         .get(`https://anime-facts-rest-api.herokuapp.com/api/v1/demon_slayer`)
+//         .then(response => {
+//           state.Facts.demon = response.data.data;
+//           done();
+//         });
+//       const slayer = axios.get(
+//         `https://anime-facts-rest-api.herokuapp.com/api/v1/demon_slayer`
+//       );
+//       const brother = axios.get(
+//         `https://anime-facts-rest-api.herokuapp.com/api/v1/fma_brotherhood`
+//       );
+//       const hero = axios.get(
+//         `https://anime-facts-rest-api.herokuapp.com/api/v1/boku_no_hero_academia`
+//       );
+//       const titan = axios.get(
+//         `https://anime-facts-rest-api.herokuapp.com/api/v1/attack_on_titan`
+//       );
+//       axios.all([slayer, brother, hero, titan]).then(
+//         axios.spread((...responses) => {
+//           console.log("Slayer", responses[0]);
+//           state.Facts.demon = responses[0].data.data;
+//           console.log("brother", responses[1]);
+//           state.Facts.brotherhood = responses[1].data.data;
+//           console.log("hero", responses[2]);
+//           state.Facts.hero = responses[2].data.data;
+//           console.log("titan", responses[3]);
+//           state.Facts.titan = responses[3].data.data;
 
-router.hooks({
-  before: (done, params) => {
-    const view =
-      params && params.data && params.data.view
-        ? capitalize(params.data.view)
-        : "Facts";
-    if (view === "Facts") {
-      // axios
-      //   .get(`https://anime-facts-rest-api.herokuapp.com/api/v1/demon_slayer`)
-      //   .then(response => {
-      //     state.Facts.demon = response.data.data;
-      //     done();
-      //   });
-      let slayer = axios.get(
-        `https://anime-facts-rest-api.herokuapp.com/api/v1/demon_slayer`
-      );
-      let brother = axios.get(
-        `https://anime-facts-rest-api.herokuapp.com/api/v1/fma_brotherhood`
-      );
-      let hero = axios.get(
-        `https://anime-facts-rest-api.herokuapp.com/api/v1/boku_no_hero_academia`
-      );
-      let titan = axios.get(
-        `https://anime-facts-rest-api.herokuapp.com/api/v1/attack_on_titan`
-      );
-      axios.all([slayer, brother, hero, titan]).then(
-        axios.spread((...responses) => {
-          console.log("Slayer", responses[0]);
-          state.Facts.demon = responses[0].data.data;
-          console.log("brother", responses[1]);
-          state.Facts.brotherhood = responses[1].data.data;
-          console.log("hero", responses[2]);
-          state.Facts.hero = responses[2].data.data;
-          console.log("titan", responses[3]);
-          state.Facts.titan = responses[3].data.data;
-
-          done();
-        })
-      );
-    } else {
-      done();
-    }
-  }
-});
+//           done();
+//         })
+//       );
+//     } else {
+//       done();
+//     }
+//   }
+// });
 
 router
   .on({

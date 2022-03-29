@@ -6,7 +6,7 @@ export default () => html`
       id="fs-frm"
       name="simple-contact-form"
       accept-charset="utf-8"
-      action="https://formspree.io/f/mknyrynv"
+      action="https://formspree.io/f/xrgjqjzr"
       method="POST"
     >
       <fieldset id="fs-frm-inputs">
@@ -36,7 +36,7 @@ export default () => html`
             rows="5"
             name="message"
             id="message"
-            placeholder="Input your feedback here, it is greatly appreciated!"
+            placeholder="Input your feedback here, it's greatly appreciated!"
             required=""
           ></textarea>
           <input
