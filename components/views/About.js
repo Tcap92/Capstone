@@ -1,5 +1,5 @@
 import html from "html-literal";
-import me from "../../assets/images/about.jpg";
+import me from "../../assets/images/AP.png";
 export default () => html`
   <h1>About</h1>
   <div class="aboutContainer">

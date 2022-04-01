@@ -7,7 +7,7 @@ export function btn() {
   btn.addEventListener("click", () => {
     let selectedAnswer;
     for (const radioButton of radioButtons) {
-      if ((radioButton.checked += st.Quiz.deku + 1)) {
+      if (radioButton.checked) {
         selectedAnswer = radioButton.value;
         break;
       }

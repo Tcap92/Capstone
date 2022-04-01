@@ -21,17 +21,20 @@ router.get("/", (request, response) => {
 });
 
 // Get a single record by ID using a query parameter
-router.get("/:name", (request, response) => {
-  Show.model.findOne({ anime_name: request.params.name }, (error, record) => {
-    if (error) return response.sendStatus(500).json(error);
-    return response.json(record);
-  });
-});
+// router.get("/:name", (request, response) => {
+//   Show.model.findOne({ anime_name: request.params.name }, (error, record) => {
+//     if (error) return response.sendStatus(500).json(error);
+//     return response.json(record);
+//   });
+// });
 
-router.get("/:name/facts", (request, response) => {
-  Show.model.findOne({ anime_name: request.params.name }, (error, record) => {
-    if (error) return response.sendStatus(500).json(error);
-    return response.json(record.facts);
-  });
+router.get("/anime_name/:anime_name", (request, response) => {
+  Show.model.findOne(
+    { anime_name: request.params.anime_name },
+    (error, record) => {
+      if (error) return response.sendStatus(500).json(error);
+      return response.json(record.st.Facts);
+    }
+  );
 });
 module.exports = router;

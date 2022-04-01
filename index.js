@@ -50,38 +50,53 @@ router.hooks({
         ? capitalize(params.data.view)
         : "Facts";
     if (view === "Facts") {
-      axios
-        .get(`https://anime-facts-rest-api.herokuapp.com/api/v1/demon_slayer`)
-        .then(response => {
-          state.Facts.demon = response.data.data;
-          done();
-        });
-      const slayer = axios.get(
-        `https://anime-facts-rest-api.herokuapp.com/api/v1/demon_slayer`
-      );
-      const brother = axios.get(
-        `https://anime-facts-rest-api.herokuapp.com/api/v1/fma_brotherhood`
-      );
-      const hero = axios.get(
-        `https://anime-facts-rest-api.herokuapp.com/api/v1/boku_no_hero_academia`
-      );
-      const titan = axios.get(
-        `https://anime-facts-rest-api.herokuapp.com/api/v1/attack_on_titan`
-      );
-      axios.all([slayer, brother, hero, titan]).then(
-        axios.spread((...responses) => {
-          console.log("Slayer", responses[0]);
-          state.Facts.demon = responses[0].data.data;
-          console.log("brother", responses[1]);
-          state.Facts.brotherhood = responses[1].data.data;
-          console.log("hero", responses[2]);
-          state.Facts.hero = responses[2].data.data;
-          console.log("titan", responses[3]);
-          state.Facts.titan = responses[3].data.data;
+      //       axios
+      //         .get(`https://anime-facts-rest-api.herokuapp.com/api/v1/demon_slayer`)
+      //         .then(response => {
+      //           state.Facts.demon = response.data.data;
+      //           done();
+      //         });
+      //       const slayer = axios.get(
+      //         `https://anime-facts-rest-api.herokuapp.com/api/v1/demon_slayer`
+      //       );
+      //       const brother = axios.get(
+      //         `https://anime-facts-rest-api.herokuapp.com/api/v1/fma_brotherhood`
+      //       );
+      //       const hero = axios.get(
+      //         `https://anime-facts-rest-api.herokuapp.com/api/v1/boku_no_hero_academia`
+      //       );
+      //       const titan = axios.get(
+      //         `https://anime-facts-rest-api.herokuapp.com/api/v1/attack_on_titan`
+      //       );
+      //       axios.all([slayer, brother, hero, titan]).then(
+      //         axios.spread((...responses) => {
+      //           console.log("Slayer", responses[0]);
+      //           state.Facts.demon = responses[0].data.data;
+      //           console.log("brother", responses[1]);
+      //           state.Facts.brotherhood = responses[1].data.data;
+      //           console.log("hero", responses[2]);
+      //           state.Facts.hero = responses[2].data.data;
+      //           console.log("titan", responses[3]);
+      //           state.Facts.titan = responses[3].data.data;
 
+      //           done();
+      //         })
+      //       );
+      //     } else {
+      //       done();
+      //     }
+      //   }
+      // });
+      axios
+        .get(`${process.env.ANIME_FACTS_API_URL}`)
+        .then(response => {
+          console.log(response.data);
+          state.Facts.facts = response.data;
           done();
         })
-      );
+        .catch(error => {
+          console.log("It puked", error);
+        });
     } else {
       done();
     }

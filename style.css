@@ -384,7 +384,7 @@
 }
 
 .aboutME {
-  width: 50%;
+  width: 100%;
   align-items: center;
   display: flex;
 }
@@ -394,5 +394,5 @@
   margin: 5px;
 }
 .aboutIntro {
-  width: 150%;
+  width: 50%;
 }

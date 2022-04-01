@@ -13,6 +13,7 @@ const app = express();
 
 const PORT = process.env.PORT || 4040; // we use || to provide a default value
 
+//stop
 mongoose.connect(process.env.MONGODB);
 const db = mongoose.connection;
 
