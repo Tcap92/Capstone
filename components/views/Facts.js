@@ -4,9 +4,30 @@ export default st => html`
   <h1>Facts</h1>
   <div id="factPage">
     <div id="demonFact" class="factStyle">
-      <h3>Demon Slayer Facts</h3>
+      <h3>Random Anime Facts</h3>
       ${st.facts.map(name => {
         return `<div class="demonFacts">-${name.facts[0].fact}</div>`;
+      })}
+      ${st.facts.map(fact => {
+        return `<div class="demonFacts">${fact.bleach}</div>`;
+      })};
+      ${st.facts.map(name => {
+        return `<div class="demonFacts">-${name.facts[2].fact}</div>`;
+      })}
+      ${st.facts.map(name => {
+        return `<div class="demonFacts">-${name.facts[3].fact}</div>`;
+      })}
+      ${st.facts.map(name => {
+        return `<div class="demonFacts">-${name.facts[4].fact}</div>`;
+      })}
+      ${st.facts.map(name => {
+        return `<div class="demonFacts">-${name.facts[5].fact}</div>`;
+      })}
+      ${st.facts.map(name => {
+        return `<div class="demonFacts">-${name.facts[6].fact}</div>`;
+      })}
+      ${st.facts.map(name => {
+        return `<div class="demonFacts">-${name.facts[7].fact}</div>`;
       })}
     </div>
   </div>

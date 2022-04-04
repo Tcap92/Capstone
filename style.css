@@ -4,6 +4,10 @@
   font-family: "Rowdies", cursive;
   /* box-sizing: border-box; */
   background-color: rgb(199, 221, 216);
+
+}
+#aboutContainer {
+  background-image: url(assets/images/AP.png);
 }
 
 /* header {
@@ -384,9 +388,12 @@
 }
 
 .aboutME {
-  width: 100%;
+  width: 75%;
   align-items: center;
   display: flex;
+  float: right;
+  height: 50%;
+  padding: 20px;
 }
 .aboutContainer {
   display: flex;
@@ -394,5 +401,7 @@
   margin: 5px;
 }
 .aboutIntro {
-  width: 50%;
+  display: flex;
+  padding: 20px;
+  width: 125%;
 }

@@ -33,8 +33,8 @@ function addFacts(st) {
 function addEventListeners(st) {
   // add menu toggle to bars icon in nav bar
   document.querySelector(".fa-bars").addEventListener("click", () => {
-    Quiz.test();
-    Quiz.btn();
+    // Quiz.test();
+    // Quiz.btn();
     document.querySelector("nav > ul").classList.toggle("hidden--mobile");
   });
 
