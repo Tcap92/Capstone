@@ -1,5 +1,5 @@
 import html from "html-literal";
-import foot from "../assets/images/pfp12.png";
+import foot from "../assets/images/logo4.png";
 
 let year = new Date().getFullYear();
 

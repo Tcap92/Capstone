@@ -5,7 +5,7 @@ import { capitalize } from "lodash";
 import axios from "axios";
 // import { doesNotMatch } from "assert";
 import dotenv from "dotenv";
-import * as Quiz from "./Quiz.js";
+import * as Quiz from "/Quiz.js";
 dotenv.config();
 
 const router = new Navigo("/");
@@ -22,13 +22,13 @@ function render(st) {
   addEventListeners(st);
 }
 
-function addFacts(st) {
-  st.facts.map(fact => {
-    let content = document.createElement("div");
-    content.innerText = fact.fact;
-    document.getElementById("factRoot").appendChild(content);
-  });
-}
+// function addFacts(st) {
+//   st.facts.map(fact => {
+//     let content = document.createElement("div");
+//     content.innerText = fact.fact;
+//     document.getElementById("factRoot").appendChild(content);
+//   });
+// }
 
 function addEventListeners(st) {
   // add menu toggle to bars icon in nav bar
@@ -37,11 +37,40 @@ function addEventListeners(st) {
     // Quiz.btn();
     document.querySelector("nav > ul").classList.toggle("hidden--mobile");
   });
+  //Quiz return
+  if (st.view === "Home") {
+    const form = document.querySelector("form");
+    form.addEventListener("submit", event => {
+      event.preventDefault();
+      console.log("test", document.getElementById("question1A1"));
+      if (document.getElementById("question1A1").checked === true) {
+        state.Quiz.deku += 1;
+        console.log(state.Quiz.deku);
+      }
+      if (document.getElementById("question1A2").checked === true) {
+        state.Quiz.bakugo += 1;
+      }
+      if (document.getElementById("question2A1").checked === true) {
+        state.Quiz.bakugo += 1;
+      }
+      if (document.getElementById("question2A2").checked === true) {
+        state.Quiz.deku += 1;
+      }
+      if (document.getElementById("question1A1").checked === true) {
+        state.Quiz.bakugo += 1;
+      }
+      if (document.getElementById("question1A2").checked === true) {
+        state.Quiz.deku += 1;
+      }
 
-  if (st.view === "Facts") {
-    addFacts(st);
+      render(state.Results);
+    });
   }
 }
+// if (st.view === "Facts") {
+//   addFacts(st);
+// }
+
 // API incase it starts to work
 router.hooks({
   before: (done, params) => {

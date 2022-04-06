@@ -6,7 +6,7 @@ import allMight from "../../assets/images/AllMight.jpg";
 export default st => html`
   <div>
     <div class="mainContent">
-      <div class="pageLeft">
+      <form class="pageLeft">
         <div id="demonSlayer">
           <img src=${flameHashira} class="picOne" alt="Flame Hashira" />
           <!-- <div class="mainP"> -->
@@ -19,8 +19,8 @@ export default st => html`
                   <input
                     type="radio"
                     id="question1A1"
-                    name="question"
-                    value="question1A1"
+                    name="question1"
+                    value="deku"
                     checked
                   />
                   <label for="huey">Friends & Family</label>
@@ -28,27 +28,24 @@ export default st => html`
                 <input
                   type="radio"
                   id="question1A2"
-                  name="question"
-                  value="deku"
-                  checked
+                  name="question1"
+                  value="bakugo"
                 />
                 <label for="huey">Being the best</label>
                 <div id="answerThreeFour">
                   <input
                     type="radio"
                     id="question1A3"
-                    name="question"
-                    value="bakugo"
-                    checked
+                    name="question1"
+                    value="question1A3"
                   />
                   <label for="huey">Question1A3</label>
                 </div>
                 <input
                   type="radio"
                   id="question1A4"
-                  name="question"
+                  name="question1"
                   value="question1A4"
-                  checked
                 />
                 <label for="huey">Question1A4</label>
               </div>
@@ -64,7 +61,7 @@ export default st => html`
                 <input
                   type="radio"
                   id="question2A1"
-                  name="question"
+                  name="question2"
                   value="bakugo"
                   checked
                 />
@@ -73,27 +70,24 @@ export default st => html`
               <input
                 type="radio"
                 id="question2A2"
-                name="question"
+                name="question2"
                 value="deku"
-                checked
               />
               <label for="huey">Reserved</label>
               <div id="answerThreeFour">
                 <input
                   type="radio"
                   id="question2A3"
-                  name="question"
+                  name="question2"
                   value="question2A3"
-                  checked
                 />
                 <label for="huey">Question2A3</label>
               </div>
               <input
                 type="radio"
                 id="question1A4"
-                name="question"
+                name="question2"
                 value="question1A4"
-                checked
               />
               <label for="huey">Question2A4</label>
             </div>
@@ -106,8 +100,8 @@ export default st => html`
                 <!-- input type check box -->
                 <input
                   type="radio"
-                  id="question2A1"
-                  name="question"
+                  id="question3A1"
+                  name="question3"
                   value="bakugo"
                   checked
                 />
@@ -115,37 +109,34 @@ export default st => html`
               </div>
               <input
                 type="radio"
-                id="question2A2"
-                name="question"
+                id="question3A2"
+                name="question3"
                 value="deku"
-                checked
               />
               <label for="huey">Feet</label>
               <div id="answerThreeFour">
                 <input
                   type="radio"
-                  id="question2A3"
-                  name="question"
+                  id="question3A3"
+                  name="question3"
                   value="question2A3"
-                  checked
                 />
                 <label for="huey">Question2A3</label>
               </div>
               <input
                 type="radio"
-                id="question1A4"
-                name="question"
+                id="question3A4"
+                name="question3"
                 value="question1A4"
-                checked
               />
               <label for="huey">Question2A4</label>
             </div>
           </div>
           <div class="controls">
-            <button id="submit-btn" class="start-btn btn">Submit</button>
+            <button id="submit-btn">Submit</button>
           </div>
         </div>
-      </div>
+      </form>
       <div class="pageRight">
         <div id="blackBull">
           <iframe
