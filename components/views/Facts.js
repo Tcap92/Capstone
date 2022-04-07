@@ -10,7 +10,7 @@ export default st => html`
         return `<div class="demonFacts">-${name.facts[0].fact}</div>`;
       })}
       ${st.facts.map(fact => {
-        return `<div class="demonFacts">${fact.bleach}</div>`;
+        return `<div class="demonFacts">${name.facts[1].fact}</div>`;
       })};
       ${st.facts.map(name => {
         return `<div class="demonFacts">-${name.facts[2].fact}</div>`;

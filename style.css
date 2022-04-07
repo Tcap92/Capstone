@@ -306,6 +306,11 @@
   border-width: 5px;
 }
 
+#submit-btn {
+  padding: 5px;
+  border-radius: 25px;
+}
+
 /* #navBar {
   display: flex;
   width: 100vw;
