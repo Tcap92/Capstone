@@ -473,23 +473,39 @@
 }
 
 .aboutME {
-  width: 75%;
+  border-radius: 100px;
+  width: 45vw;
   align-items: center;
   display: flex;
   float: right;
-  height: 50%;
+  height: 50vh;
   padding: 20px;
 }
 .aboutContainer {
-  display: flex;
   padding: 5px;
   margin: 5px;
 }
+.aboutBox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+
+}
 .aboutIntro {
   display: flex;
-  padding: 20px;
-  width: 125%;
+  justify-items: center;
+  width: 60%;
+  line-height: 1.5;
 }
 #factPage {
   line-height: 1.5;
 }
+
+.aboutMe2 {
+  display: flex;
+  justify-content: center;
+}
+
+
