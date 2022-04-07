@@ -42,7 +42,7 @@ function addEventListeners(st) {
     const form = document.querySelector("form");
     form.addEventListener("submit", event => {
       event.preventDefault();
-      console.log("test", document.getElementById("question1A1"));
+
       if (document.getElementById("question1A1").checked === true) {
         state.Quiz.deku += 1;
         console.log(state.Quiz.deku);
@@ -62,7 +62,8 @@ function addEventListeners(st) {
       if (document.getElementById("question1A2").checked === true) {
         state.Quiz.deku += 1;
       }
-
+      console.log("QUIZ RESULTS", state.Quiz);
+      router.navigate("Results");
       render(state.Results);
     });
   }

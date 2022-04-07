@@ -1,6 +1,7 @@
 import html from "html-literal";
 
 export default st => html`
+  ${console.log(st.facts)}
   <h1>Facts</h1>
   <div id="factPage">
     <div id="demonFact" class="factStyle">

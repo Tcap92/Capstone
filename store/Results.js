@@ -1,5 +1,5 @@
 export default {
-  header: "Character",
+  header: "Results",
   view: "Results",
   deku: {
     profileImg:
