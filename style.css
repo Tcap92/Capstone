@@ -508,4 +508,9 @@
   justify-content: center;
 }
 
+.aboutPic {
+  display: flex;
+  justify-content: center;
+}
+
 
