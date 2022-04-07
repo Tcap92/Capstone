@@ -11,7 +11,7 @@ export default st => html`
       })}
       ${st.facts.map(name => {
         return `<div class="demonFacts">${name.facts[1].fact}</div>`;
-      })};
+      })}
       ${st.facts.map(name => {
         return `<div class="demonFacts">-${name.facts[2].fact}</div>`;
       })}
