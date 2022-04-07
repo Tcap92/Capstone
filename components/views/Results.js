@@ -5,18 +5,26 @@ export default st => {
   if (Quiz.deku > Quiz.bakugo) {
     return html`
       <div class="resultDeku">
-        <h1>${st.deku.finishing}</h1>
-        <p>${st.deku.description}</p>
-        <img src="${st.deku.profileImg}" />
+        <div class="dekuBox">
+          <img src="${st.deku.profileImg}" class="deku" />
+        </div>
+        <div class="dekuResult">
+          <h1 class="dekuDescription">${st.deku.description}</h1>
+          <h2 class="dekuFinish">${st.deku.finishing}</h2>
+        </div>
       </div>
     `;
   }
   return html`
     <div>
       <div class="resultBakugo">
-        <h1>${st.bakugo.finishing}</h1>
-        <p>${st.bakugo.description}</p>
-        <img src="${st.bakugo.profileImg}" />
+        <div class="bakugoBox">
+          <img src="${st.bakugo.profileImg}" class="bakugo" />
+        </div>
+        <div class="bakugoResult">
+          <h1 class="bakugoDescription">${st.bakugo.description}</h1>
+          <h2 class="bakugoFinish">${st.bakugo.finishing}</h2>
+        </div>
       </div>
     </div>
   `;

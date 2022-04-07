@@ -5,7 +5,7 @@ export default st => html`
   <h1>Facts</h1>
   <div id="factPage">
     <div id="demonFact" class="factStyle">
-      <h3>Random Anime Facts</h3>
+      <h1>Random Anime Facts</h1>
       ${st.facts.map(name => {
         return `<div class="demonFacts">-${name.facts[0].fact}</div>`;
       })}
