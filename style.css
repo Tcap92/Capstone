@@ -60,7 +60,8 @@
   flex-direction: row;
   border-width: 0px;
   height: auto;
-  justify-content: center;
+  /* youtube flow */
+  /* justify-content: center; */
   width: 100%;
   padding-top: 20px;
 }
@@ -74,7 +75,8 @@
 #blackBull {
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* youtube flow */
+  /* justify-content: center; */
 }
 
 #demonSlayer > img {
@@ -327,6 +329,10 @@
     flex-direction: column;
     padding: 0 0;
   }
+  .mainContent {
+    display: flex;
+    justify-content: center;
+  }
 
   nav > ul > li {
     padding: 0.5rem;
@@ -368,6 +374,9 @@
   height: 50vh;
   border: solid;
   border-width: 5px;
+  /* youtube flow */
+  position: fixed;
+  margin-top: 240px;
 }
 
 #submit-btn:hover,
