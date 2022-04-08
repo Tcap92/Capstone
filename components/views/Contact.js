@@ -47,7 +47,7 @@ export default () => html`
           />
         </div>
       </fieldset>
-      <input type="submit" value="Submit" />
+      <input type="submit" value="Submit" class="contactSubmit" />
     </form>
   </div>
 `;

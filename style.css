@@ -393,6 +393,20 @@
   border-radius: 25px;
 }
 
+.contactSubmit:hover,
+.contactSubmit:focus {
+    border-radius: 25px;
+    transition: all 0.5s ease-out;
+    background-color: rgb(253, 253, 253);
+    color: rgb(52, 52, 52);
+  }
+
+.contactSubmit {
+  background-color: rgb(165, 81, 81);
+  padding: 10px;
+  border-radius: 25px
+}
+
 /* #navBar {
   display: flex;
   width: 100vw;
@@ -483,11 +497,11 @@
 
 .aboutME {
   border-radius: 100px;
-  width: 45vw;
+  width: 25vw;
   align-items: center;
   display: flex;
   float: right;
-  height: 50vh;
+  height: 35vh;
   padding: 20px;
 }
 .aboutContainer {

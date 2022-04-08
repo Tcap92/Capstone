@@ -10,7 +10,7 @@ dotenv.config();
 
 const router = new Navigo("/");
 
-function render(st = state.home) {
+function render(st = state.Home) {
   document.querySelector("#root").innerHTML = `
       ${Header(st)}
       ${Nav(state.Links)}
@@ -78,7 +78,7 @@ router.hooks({
     const view =
       params && params.data && params.data.view
         ? capitalize(params.data.view)
-        : "Facts";
+        : "Home";
     if (view === "Facts") {
       //       axios
       //         .get(`https://anime-facts-rest-api.herokuapp.com/api/v1/demon_slayer`)
