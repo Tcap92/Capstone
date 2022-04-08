@@ -10,7 +10,7 @@ dotenv.config();
 
 const router = new Navigo("/");
 
-function render(st) {
+function render(st = state.home) {
   document.querySelector("#root").innerHTML = `
       ${Header(st)}
       ${Nav(state.Links)}
