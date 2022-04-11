@@ -51,6 +51,12 @@
   height: 25vh;
   width: 100%;
   display: flex;
+  font-size: xxx-large;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(199, 221, 216);
+  font-family: cursive;
 }
 
 .mainContent {
@@ -312,6 +318,7 @@
     display: none !important;
   }
 
+
   nav {
     display: flex;
     align-items: center;
@@ -346,12 +353,33 @@
   }
   .mainContent > .pageLeft > #demonSlayer > .picOne {
     width: 100%;
+    height: auto;
   }
   .mainContent > .pageLeft > #demonSlayer > .picTwo {
     width: 100%;
+    height: auto;
   }
   .mainContent > .pageLeft > #demonSlayer > .picThree {
     width: 100%;
+    height: auto;
+  }
+  .resultBakugo > .bakugoResult > .bakugoDescription {
+    font-size: smaller;
+    width: 75%;
+  }
+  .resultBakugo > .bakugoResult > .bakugoFinish {
+    font-size: smaller;
+    width: 75%;
+    padding-top: 10px;
+  }
+  .resultDeku > .dekuResult > .dekuDescription {
+    font-size: smaller;
+    width: 75%;
+  }
+  .resultDeku > .dekuResult > .dekuFinish {
+    font-size: smaller;
+    width: 75%;
+    padding-top: 10px;
   }
 }
 
@@ -497,7 +525,6 @@
 
 .aboutME {
   border-radius: 100px;
-  width: 25vw;
   align-items: center;
   display: flex;
   float: right;
@@ -519,7 +546,7 @@
 .aboutIntro {
   display: flex;
   justify-items: center;
-  width: 60%;
+  width: 75%;
   line-height: 1.5;
 }
 #factPage {
